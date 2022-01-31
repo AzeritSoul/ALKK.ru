@@ -1,0 +1,199 @@
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@200;300;400;500;600;700&display=swap');
+    $width:1440px;
+    button:hover {
+        background: #FF0404;
+    }
+    
+    html {
+        font-family: 'Fira Sans Extra Condensed', sans-serif;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 500;
+        a:hover {
+            color: blue;
+        }
+    }
+    
+    .wrapper {
+        width: $width;
+        height: 5120px;
+        margin: 0 auto;
+    }
+    
+    .top_nav {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        justify-content: space-around;
+        background: #ffff;
+        div {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-weight: 700;
+            .pref_logo {
+                font-size: 10px;
+            }
+            .nav_contacts {
+                gap: 10px;
+            }
+        }
+    }
+    
+    .undertop_nav {
+        background-color: #485461;
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+        width: $width;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 56px;
+        p {
+            font-size: 13px;
+            line-height: 21px;
+            color: #ffff;
+            font-weight: 400;
+        }
+    }
+    
+    .promotion_site {
+        background: linear-gradient(#F5F7F9, #ECE8E5);
+        height: 1088px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            gap: 10px;
+            margin-top: 80px;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 55px;
+        }
+    }
+    
+    .calculator {
+        margin-top: 45px;
+        width: 984px;
+        height: 828px;
+        background: #ffff;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            margin-top: 45px;
+        }
+        .calculator_search {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            gap: 10px;
+            margin-top: 35px;
+            width: 900px;
+            margin-bottom: 45px;
+        }
+        .topic_select {
+            margin-right: 400px;
+            display: flex;
+            column-gap: 10px;
+            select {
+                border: none;
+                width: 105px;
+                height: 35px;
+                border-radius: 5px;
+                background: #EAECEF;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 24px;
+            }
+        }
+        .topic_chekbox {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        [checked] {
+            width: 20px;
+            height: 20px;
+            border: 5px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    
+    .range {
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        .range_text {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            height: 15px;
+            margin-bottom: 10px;
+            .pay {
+                font-weight: 500;
+                font-size: 10px;
+                line-height: 15px;
+            }
+            .price {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                span {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .cost_range {
+            [type="range"] {
+                width: 890px;
+            }
+        }
+        .complete {
+            color: rgb(21, 103, 196);
+            background: white;
+            border: rgb(21, 103, 196) 2px solid;
+            width: 150px;
+            height: 50px;
+            border-radius: 5px;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            margin-top: 35px;
+            margin-bottom: 45px;
+            .complete:hover {
+                border: 2px solid red;
+            }
+            p {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                margin: 11px 32px 12px 32px;
+            }
+        }
+        .promout {
+            width: $width;
+            h3 {
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 30px;
+            }
+        }
+    }
